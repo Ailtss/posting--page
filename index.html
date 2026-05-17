@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PostMe – Compartilhe sua ideia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">◈ PostMe</div>
+      <div class="header-user">
+        <div class="avatar">AG</div>
+        <span>Ailton Gabriel</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="feed-layout">
+
+      <!-- COLUNA ESQUERDA: perfil -->
+      <aside class="sidebar">
+        <div class="profile-card">
+          <div class="profile-cover"></div>
+          <div class="profile-info">
+            <div class="profile-avatar">AG</div>
+            <h2>Ailton Gabriel</h2>
+            <p>Desenvolvedor em formação · DEVstart SENAI</p>
+            <hr/>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-num" id="total-posts">0</span>
+                <span class="stat-label">Posts</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">47</span>
+                <span class="stat-label">Conexões</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- COLUNA CENTRAL: formulário + feed -->
+      <section class="feed">
+
+        <!-- FORMULÁRIO DE POST -->
+        <div class="post-composer">
+          <div class="composer-header">
+            <div class="avatar-sm">AG</div>
+            <span>No que você está pensando?</span>
+          </div>
+
+          <form id="form-post">
+            <div class="input-group">
+              <label for="titulo">Título</label>
+              <input
+                type="text"
+                id="titulo"
+                placeholder="Ex: Aprendi algo incrível hoje..."
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="conteudo">Conteúdo</label>
+              <textarea
+                id="conteudo"
+                rows="4"
+                placeholder="Compartilhe seus pensamentos, aprendizados ou novidades..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="composer-footer">
+              <span class="composer-hint">🌐 Visível para todos</span>
+              <button type="submit" id="btn-postar">
+                <span id="btn-texto">Publicar</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- FEED DE POSTS — os cards são inseridos aqui pelo JS -->
+        <div id="feed-posts"></div>
+
+        <!-- MENSAGEM DE ERRO -->
+        <div class="error-msg" id="error-msg" style="display:none;">
+          ⚠️ Ops! Algo deu errado. Tente novamente.
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>PostMe © 2025 · Projeto DEVstart SENAI · Desenvolvido por Ailton Gabriel</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
