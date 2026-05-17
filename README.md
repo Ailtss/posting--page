@@ -1,4 +1,4 @@
-# ◈ PostMe - Página de Publicações
+# ◈ Página de Publicações
 
 ## 📌 Resumo do Projeto
 
@@ -114,7 +114,7 @@ Para persistência real, seria necessário usar `localStorage` ou um backend pr�
 
 1. Clone o repositório:
 ```
-git clone https://github.com/seu-usuario/posting--page
+git clone https://github.com/Ailtss/posting--page
 ```
 
 2. Acesse a pasta do projeto:
